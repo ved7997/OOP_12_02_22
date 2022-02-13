@@ -16,9 +16,10 @@ public class Grifindor extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() +
-                " Благородство студнта равно: " + nobility +
-                " Честь студента равна: " + honor +
+        String zpt = ", ";
+        return super.toString() + zpt +
+                " Благородство студнта равно: " + nobility + zpt +
+                " Честь студента равна: " + honor + zpt +
                 " Храбрость студента равна: " + bravery;
     }
 

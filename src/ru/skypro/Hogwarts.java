@@ -13,8 +13,9 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return "Имя студента Ховардса " + name + "Сила колдовства " + conjure +
-                "Сила трансгресировать " + transgress ;
+        String zpt = ", ";
+        return "Имя студента Хогвардса: " + name + zpt + " Сила колдовства: " + conjure + zpt +
+                " Сила трансгресировать: " + transgress;
     }
 
     public String getName() {

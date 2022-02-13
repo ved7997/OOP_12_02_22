@@ -15,9 +15,10 @@ public class Pufenduy extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() +
-                " Трудолюбие студента равно: " + hardworking +
-                " Верность студента равна: " + loyal +
+        String zpt = ", ";
+        return super.toString() + zpt +
+                " Трудолюбие студента равно: " + hardworking + zpt +
+                " Верность студента равна: " + loyal + zpt +
                 " Честность студента равна: " + honest;
     }
 

@@ -15,9 +15,10 @@ public class Cogtervan extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() +
-                " Ум студента равен: " + smart +
-                " Мудрость студента равна: " + wise +
+        String zpt = ", ";
+        return super.toString() + zpt +
+                " Ум студента равен: " + smart + zpt +
+                " Мудрость студента равна: " + wise + zpt +
                 " Остроумие и творчество студента равна: " + wittyСreativity;
     }
 
