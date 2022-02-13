@@ -1,27 +1,36 @@
 package ru.skypro;
 
-public class Grifindor {
-    private final String firstName;
-    private final String lastName;
 
-    public Grifindor(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
+public class Grifindor extends Hogwarts {
+    private final int nobility;//благородство
+    private final int honor;//честь
+    private final int bravery;//храбрость
+
+    public Grifindor(String name, int nobility, int honor, int bravery,  int conjure, int transgress){
+        super(name, conjure, transgress);
+        this.nobility = nobility;
+        this.honor = honor;
+        this.bravery = bravery;
+
     }
 
-    public String getFirstName() {
-        return firstName;
+    @Override
+    public String toString() {
+        return super.toString() +
+                " Благородство студнта равно: " + nobility +
+                " Честь студента равна: " + honor +
+                " Храбрость студента равна: " + bravery;
     }
 
-    public String getLastName() {
-        return lastName;
+    public int getNobility() {
+        return nobility;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public int getHonor() {
+        return honor;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public int getBravery() {
+        return bravery;
     }
 }
