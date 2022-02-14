@@ -43,7 +43,10 @@ public class Main {
         System.out.println(chgouChang);
         System.out.println(padmaPatil);
         System.out.println(markusBalbi);
-        Hogwarts student = new Hogwarts("Гарри Поттер", 55, 55);
+        //Hogwarts student = new Hogwarts("Гарри Поттер", 55, 55);
         germionaGraynger.compareStudents(garriPotter);
+        garriPotter.compareGrifindor(germionaGraynger);
+        zahariySmit.comparePufenduy(sedrikDiggori);
+
     }
 }

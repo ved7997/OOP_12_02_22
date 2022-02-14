@@ -22,6 +22,32 @@ public class Grifindor extends Hogwarts {
                 " Честь студента равна: " + honor + zpt +
                 " Храбрость студента равна: " + bravery;
     }
+    public void compareGrifindor(Grifindor student){
+        super.compareStudents(student);
+        if (this.nobility > student.getNobility()) {
+            System.out.println(" Благородство " + this.getName() + " выше чем у " + student.getName());
+        }else  if (this.nobility == student.getNobility()){
+            System.out.println(" Благородство " + this.getName() + " такое же как и у " + student.getName());
+        }else {
+            System.out.println(" Благородство " + this.getName() + " ниже чем у " + student.getName());
+        }
+
+        if (this.honor > student.getHonor()) {
+            System.out.println(" Честь " + this.getName() + " выше чем у " + student.getName());
+        }else if (this.honor == student.getHonor()){
+            System.out.println(" Честь " + this.getName() + " такая же как и у " + student.getName());
+        }else {
+            System.out.println(" честь " + this.getName() + " ниже чем у " + student.getName());
+        }
+
+        if (this.bravery > student.getBravery()) {
+            System.out.println(" Храбрость " + this.getName() + " выше чем у " + student.getName());
+        }else if (this.bravery == student.getBravery()){
+            System.out.println(" Храбрость " + this.getName() + " такая же как и у " + student.getName());
+        }else {
+            System.out.println(" Храбрость " + this.getName() + " ниже чем у " + student.getName());
+        }
+    }
 
     public int getNobility() {
         return nobility;

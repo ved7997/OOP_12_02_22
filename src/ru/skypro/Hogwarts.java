@@ -20,19 +20,19 @@ public class Hogwarts {
 
     public void compareStudents(Hogwarts student){
         if (this.conjure > student.getConjure()) {
-            System.out.println("Сила магии " + this.name + this.conjure + " больше чем " + student.name + student.getConjure());
+            System.out.println("Сила магии " + this.name + " " + this.conjure + " больше чем " + student.name + " " + student.getConjure());
         }else if (this.conjure == student.getConjure()) {
-            System.out.println("Сила магии " + this.name + this.conjure + " равна силе " + student.name + student.getConjure());
+            System.out.println("Сила магии " + this.name + " " + this.conjure + " равна силе " + student.name + " " +  student.getConjure());
         }else {
-            System.out.println("Сила магии " + this.name + this.conjure + " меньше чем " + student.name +  student.getConjure());
+            System.out.println("Сила магии " + this.name + " " + this.conjure + " меньше чем " + student.name +  " " + student.getConjure());
         }
 
         if (this.transgress > student.getTransgress()) {
-            System.out.println("Сила трансгресировать " + this.name + this.transgress + " больше чем " + student.name + student.getTransgress());
+            System.out.println("Сила трансгресировать " + this.name + " " + this.transgress + " больше чем " + student.name + " " +  student.getTransgress());
         }else if (this.transgress == student.getTransgress()) {
-            System.out.println("Сила трансгресировать " + this.name + this.transgress +  " равна силе "+ student.name + student.getTransgress());
+            System.out.println("Сила трансгресировать " + this.name + " " + this.transgress +  " равна силе "+ student.name + " " +  student.getTransgress());
         }else {
-            System.out.println("Сила трансгресировать " + this.name + this.transgress + " меньше чем " + student.name + student.getTransgress());
+            System.out.println("Сила трансгресировать " + this.name + " " + this.transgress + " меньше чем " + student.name + " " + student.getTransgress());
         }
 
 

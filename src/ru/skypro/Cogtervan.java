@@ -22,6 +22,8 @@ public class Cogtervan extends Hogwarts {
                 " Остроумие и творчество студента равна: " + wittyСreativity;
     }
 
+
+
     public int getSmart() {
         return smart;
     }
