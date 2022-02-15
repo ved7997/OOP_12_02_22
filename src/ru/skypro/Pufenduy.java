@@ -40,7 +40,7 @@ public class Pufenduy extends Hogwarts {
             System.out.println(" Верность " + this.getName() + " ниже чем у " + student.getName());
         }
 
-        if (this.honest > student.honest) {
+        if (this.honest > student.getHonest()) {
             System.out.println(" Честность " + this.getName() + " выше чем у " + student.getName());
         }else if (this.honest == student.getHonest()){
             System.out.println(" Честность " + this.getName() + " такая же как и у " + student.getName());

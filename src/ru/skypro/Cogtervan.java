@@ -22,7 +22,32 @@ public class Cogtervan extends Hogwarts {
                 " Остроумие и творчество студента равна: " + wittyСreativity;
     }
 
+    public void compareCogtervan(Cogtervan student){
+        super.compareStudents(student);
+        if (this.smart > student.getSmart()) {
+            System.out.println(" Ум " + this.getName() + " умнее чем у " + student.getName());
+        }else  if (this.smart == student.getSmart()){
+            System.out.println(" Ум " + this.getName() + " такой же как и у " + student.getName());
+        }else {
+            System.out.println(" Ум " + this.getName() + " глупее чем у " + student.getName());
+        }
 
+        if (this.wise > student.getWise()) {
+            System.out.println(" Мудрость " + this.getName() + " выше чем у " + student.getName());
+        }else if (this.wise == student.getWise()){
+            System.out.println(" Мудрость " + this.getName() + " такая же как и у " + student.getName());
+        }else {
+            System.out.println(" Мудрость " + this.getName() + " ниже чем у " + student.getName());
+        }
+
+        if (this.wittyСreativity > student.getWittyСreativity()) {
+            System.out.println(" Остроумие и творчество " + this.getName() + " лучше чем у " + student.getName());
+        }else if (this.wittyСreativity == student.getWittyСreativity()){
+            System.out.println(" Остроумие и творчество " + this.getName() + " такие же как и у " + student.getName());
+        }else {
+            System.out.println(" Остроумие и творчество " + this.getName() + " ниже чем у " + student.getName());
+        }
+    }
 
     public int getSmart() {
         return smart;

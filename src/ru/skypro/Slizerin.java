@@ -21,6 +21,33 @@ public class Slizerin extends Hogwarts {
                 " Амбициозность студента равна: " + ambition;
     }
 
+    public void compareSlizerin(Slizerin student){
+        super.compareStudents(student);
+        if (this.cunning > student.getCunning()) {
+            System.out.println(" Хитрость " + this.getName() + " хитрее чем у " + student.getName());
+        }else  if (this.cunning == student.getCunning()){
+            System.out.println(" Хитрость " + this.getName() + " такая же как и у " + student.getName());
+        }else {
+            System.out.println(" Хитрость " + this.getName() + " ниже чем у " + student.getName());
+        }
+
+        if (this.determination > student.getDetermination()) {
+            System.out.println(" Решительность " + this.getName() + " выше чем у " + student.getName());
+        }else if (this.determination == student.getDetermination()){
+            System.out.println(" Решительность " + this.getName() + " такая же как и у " + student.getName());
+        }else {
+            System.out.println(" Решительность " + this.getName() + " ниже чем у " + student.getName());
+        }
+
+        if (this.ambition > student.getAmbition()) {
+            System.out.println(" Амбициозность " + this.getName() + " лучше чем у " + student.getName());
+        }else if (this.ambition == student.getAmbition()){
+            System.out.println(" Амбициозность " + this.getName() + " такие же как и у " + student.getName());
+        }else {
+            System.out.println(" Амбициозность " + this.getName() + " ниже чем у " + student.getName());
+        }
+    }
+
     public int getCunning() {
         return cunning;
     }

@@ -22,7 +22,7 @@ public class Main {
         //На факультете Когтевран учится Чжоу Чанг, Падма Патил и Маркус Белби.
         Cogtervan chgouChang = new Cogtervan("Чжоу Чанг", 100, 100, 100, 100, 100);
         Cogtervan padmaPatil = new Cogtervan("Падма Патил", 100, 100, 99, 99, 99);
-        Cogtervan markusBalbi = new Cogtervan("Маркус Белби", 100, 100, 99, 99, 99);
+        Cogtervan markusBalbi = new Cogtervan("Маркус Белби", 100, 99, 98, 98, 98);
 
         System.out.println("Факультет Гриффиндор!");
         System.out.println(garriPotter);
@@ -47,6 +47,9 @@ public class Main {
         germionaGraynger.compareStudents(garriPotter);
         garriPotter.compareGrifindor(germionaGraynger);
         zahariySmit.comparePufenduy(sedrikDiggori);
+        padmaPatil.compareCogtervan(markusBalbi);
+        dracoMalfoy.compareSlizerin(grehamMontegu);
 
-    }
+
+        }
 }
